@@ -27,7 +27,7 @@ build:
 
 install:
 	install -d $(INSTALL_WAYDROID_DIR) $(INSTALL_BIN_DIR) $(INSTALL_APPS_DIR) $(INSTALL_METAINFO_DIR) $(INSTALL_DBUS_DIR)/system.d $(INSTALL_POLKIT_DIR)/actions
-	cp -a data tools waydroid.py $(INSTALL_WAYDROID_DIR)
+	cp data tools waydroid.py $(INSTALL_WAYDROID_DIR)
 	ln -sf $(WAYDROID_DIR)/waydroid.py $(INSTALL_BIN_DIR)/waydroid
 	mv $(INSTALL_WAYDROID_DIR)/data/*.desktop $(INSTALL_APPS_DIR)
 	mv $(INSTALL_WAYDROID_DIR)/data/*.metainfo.xml $(INSTALL_METAINFO_DIR)
